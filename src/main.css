@@ -1,0 +1,200 @@
+:root {
+    --white: hsl(0, 0%, 100%);
+    --rose-white: hsl(330, 100%, 98%);
+    --eggshell: hsl(30, 54%, 90%);
+    --light-grey: hsl(30, 18%, 87%);
+    --wenge-brown: hsl(30, 10%, 34%);
+    --dark-charcoal: hsl(24, 5%, 18%);
+    --Nutmeg: hsl(14, 45%, 36%);
+    --DarkRaspberry: hsl(332, 51%, 32%);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'CustomFont_Black';
+    src: url('assets/fonts/outfit/static/Outfit-Black.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'CustomFont_Bold';
+    src: url('assets/fonts/outfit/static/Outfit-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'CustomFont_ExtraBold';
+    src: url('assets/fonts/outfit/static/Outfit-ExtraBold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'CustomFont_Light';
+    src: url('assets/fonts/outfit/static/Outfit-Light.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'CustomFont_ExtraLight';
+    src: url('assets/fonts/outfit/static/Outfit-ExtraLight.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'CustomFont_Medium';
+    src: url('assets/fonts/outfit/static/Outfit-Medium.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'CustomFont_Regular';
+    src: url('assets/fonts/outfit/static/Outfit-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'CustomFont_SemiBold';
+    src: url('assets/fonts/outfit/static/Outfit-SemiBold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'CustomFont_Thin';
+    src: url('assets/fonts/outfit/static/Outfit-Thin.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'CustomFont_YoungSerifRegular';
+    src: url('assets/fonts/young-serif/YoungSerif-Regular.ttf') format('truetype');
+}
+
+body {
+    background-color: hsl(30, 54%, 90%);
+}
+
+.container {
+    width: 50%;
+    height: fit-content;
+    background-color: hsl(0, 0%, 100%);
+    margin: 50px auto;
+    border-radius: 10px;
+    box-shadow: 10px solid wheat;
+    justify-content: left;
+    padding: 20px 30px 10px 30px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.omeltett {
+    border-radius: 4px;
+}
+
+h2 {
+    margin-top: 20px;
+    opacity: 0.8;
+    font-family: 'CustomFont_YoungSerifRegular', sans-serif;
+
+}
+.container p{
+    margin: 10px 0 30px 0;
+    font-family: 'CustomFont_Regular',sans-serif;
+    opacity: 0.7;
+}
+.preprationtimecontainer{
+    border-radius: 4px;
+    padding: 20px 0 20px 15px;
+    background-color: var(--rose-white);
+}
+.preprationtimecontainer ul li{
+    padding-top:10px; 
+}
+ h4{
+    margin-bottom:10px;
+    font-family: 'CustomFont_Regular',sans-serif;
+    color: var(--DarkRaspberry);
+}
+.preprationtimecontainer ul li{
+    margin-left: 15px;
+    padding-left: 20px;
+    font-family: 'CustomFont_Regular',sans-serif;
+    opacity: 0.7;
+
+}
+.preprationtimecontainer ul li b{
+    font-family: 'CustomFont_SemiBold',sans-serif;
+    opacity: 0.8;
+}
+h3{
+    margin: 10px 0 0 0;
+    color:var(--DarkRaspberry);
+    opacity: 0.8;
+}
+.ingredients{
+    margin: 15px 0 10px 15px;
+    font-family: 'CustomFont_Regular',sans-serif;
+    opacity: 0.7;
+    padding: 0 0 20px 0;
+    box-shadow: 1px 2px 1px -2px rgba(170, 163, 163, 0.9);
+
+}
+.instructions{
+    margin: 15px 0 10px 15px;
+    font-family: 'CustomFont-Regular',sans-serif;
+    opacity: 0.7;
+    padding: 0 0 20px 0;
+    box-shadow: 1px 2px 1px -1px rgba(170, 163, 163, 0.3);
+}
+.ingredients ul li::marker{
+    color:var(--DarkRaspberry);
+
+}
+.ingredients ul{
+    padding-left: 5px;
+    list-style-type: square;
+
+}
+.ingredients ul li{
+  
+
+    padding-left: 10px;
+    margin-left: 5px;
+}
+
+
+.instructions{
+    margin: 15px 0 10px 15px;
+    opacity: 0.7;
+    padding: 0 0 20px 0;
+}
+.instructions ol li{
+    line-height: 20px;
+    padding-top: 15px;
+}
+.instructions ol li::marker{
+    color: var(--DarkRaspberry);
+    font-family: 'CustomFont_Regular',sans-serif;
+
+}
+.instructions ol li  {
+padding-left: 12px;
+font-family: 'CustomFont_Regular',sans-serif;
+
+}
+
+ .nutritions p{
+    margin: 10px 0 0 0;
+    font-family: 'CustomFont_Regular',sans-serif;
+    opacity: 0.7;
+   
+ }
+ .nutritions,table tr td{
+    padding: 10px 200px 4px 50px ;
+ }
+ .nutritions, table tr{
+    opacity: 0.7;
+    font-family: 'CustomFont_Regular',sans-serif;
+
+ 
+    box-shadow: 1px 2px 1px -1px rgba(170, 163, 163, 0.3);
+ }
+ .nutritions, table td:nth-child(2){
+    color:var(--DarkRaspberry);
+    font-family: 'CustomFont_SemiBold',sans-serif;
+ }
